@@ -144,3 +144,39 @@
 # echo "Created hello/world.txt"
 
 # set the directory path
+
+# FILE REDIRECTION or USE CAT
+
+# LINE=1
+# cat new-1.txt | while read -r CURRENT_LINE #use cat
+#     do
+#         echo "$LINE: $CURRENT_LINE"
+#         ((LINE++))
+# done
+
+# OR
+
+# LINE=1
+# while read -r CURRENT_LINE
+#     do
+#         echo "$LINE: $CURRENT_LINE"
+#         ((LINE++))
+# done < "hello/world.txt" # use file redirection
+
+# READ FILE INSIDE A DIRECTORY
+
+# LINE=1
+# while read -r CURRENT_LINE
+#     do
+#         echo "$LINE: $CURRENT_LINE"
+#         ((LINE++))
+# done < "hello/world.txt"
+
+# OR
+
+# LINE=1
+# cat hello/world.txt | while read -r CURRENT_LINE
+#     do
+#         echo "$LINE: $CURRENT_LINE"
+#         ((LINE++))
+# done
