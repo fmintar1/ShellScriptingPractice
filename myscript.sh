@@ -1,25 +1,40 @@
 #! /usr/bin/bash
 
-# ECHO COMMAND
+################
+# ECHO COMMAND #
+################
+
 # echo Hello World!
 
-# VARIABLES
+#############
+# VARIABLES #
+#############
+
 # UPPERCASE by convention
 # Letters, numbers, and underscores only
 # NAME="Freddy"
 # echo "My name is $NAME"
 
-# USER INPUT, SIMILAR TO SCANNER
+##################################
+# USER INPUT, SIMILAR TO SCANNER #
+##################################
+
 # read -p "Enter your name: " NAME
 # echo "Hello $NAME, nice to meet you!"
 
-# IF STATEMENT
+################
+# IF STATEMENT #
+################
+
 # if [ "$NAME" == "Freddy" ]
 # then
 #    echo "Your name is Freddy"
 # fi
 
-# IF ELSE
+###########
+# IF ELSE #
+###########
+
 # if [ "$NAME" == "Freddy" ]
 # then
 #     echo "Your name is Freddy"
@@ -27,7 +42,10 @@
 #     echo "Your name is not Freddy"
 # fi
 
-# ELSE IF
+##################
+# ELSE IF (elif) #
+##################
+
 # if [ "$NAME" == "Freddy" ]
 # then
 #     echo "Your name is Freddy"
@@ -38,7 +56,10 @@
 #     echo "Your name is neither Freddy or Fred"
 # fi
 
-# COMPARISON (Operators)
+##########################
+# COMPARISON (Operators) #
+##########################
+
 # val1 -eq val2 if values are equal
 # val2 -ne val2 if values aren't equal
 # val1 -gt val2 if val1 > val2
@@ -55,7 +76,10 @@
 #     echo "$NUM1 is less than $NUM2"
 # fi
 
-# FILE CONDITIONS
+###################
+# FILE CONDITIONS #
+###################
+
 # -d file if file is directory
 # -e file if file exists
 # -f file if provided string is a file
@@ -81,7 +105,10 @@
 #     echo "$FILE is NOT a directory"
 # fi
 
-# CASE STATEMENTS
+###################
+# CASE STATEMENTS #
+###################
+
 # read -p "Are you 21 or over? Y/N " ANSWER
 # case "$ANSWER" in 
 #     [yY] | [yY][eE][sS])
@@ -95,7 +122,10 @@
 #         ;;
 # esac
 
-# SIMPLE FOR LOOP
+###################
+# SIMPLE FOR LOOP #
+###################
+
 # NAMES="Freddy Bobby Yoga Revil"
 
 # for NAME in $NAMES
@@ -103,7 +133,10 @@
 #         echo "Hello $NAME"
 # done
 
-# FOR LOOP TO RENAME FILES
+############################
+# FOR LOOP TO RENAME FILES #
+############################
+
 # FILES=$(ls *.txt) # * is wild card, all files with extension txt will be put in FILES
 # NEW="new" # rename each one to new - current name of the file
 
@@ -113,9 +146,14 @@
 #         mv $FILE $NEW-$FILE #renaming with mv
 # done
 
-# GOOD FOR RENAMING HUNDREDS OF FILES EASILY
+##############################################
+# GOOD FOR RENAMING HUNDREDS OF FILES EASILY #
+##############################################
 
-# WHILE LOOP - READ THROUGH A FILE LINE BY LINE
+#################################################
+# WHILE LOOP - READ THROUGH A FILE LINE BY LINE #
+#################################################
+
 # LINE=1
 # while read -r CURRENT_LINE # read line by line and used CURRENT_LINE to store lines
 #     do
@@ -123,21 +161,30 @@
 #         ((LINE++))
 # done < "./new-1.txt" # This indicates that we are reading from new-1.txt file
 
-# FUNCTION
+############
+# FUNCTION #
+############
+
 # function sayHello() {
 #     echo "Hello World"
 # }
 
 # sayHello
 
-# FUNCTION WITH PARAMETER
+###########################
+# FUNCTION WITH PARAMETER #
+###########################
+
 # function greet() {
 #     echo "Hello, I am $1 and I am $2" # positional parameter where 1 is Freddy and 2 is 33
 # }
 
 # greet "Freddy" "33" # 1 is Freddy and 2 is 33
 
-# CREATE FOLDER AND WRITE TO A FILE
+#####################################
+# CREATE FOLDER AND WRITE TO A FILE #
+#####################################
+
 # mkdir hello
 # touch "hello/world.txt"
 # echo "Hello World" >> "hello/world.txt"
@@ -145,7 +192,9 @@
 
 # set the directory path
 
-# FILE REDIRECTION or USE CAT
+###############################
+# FILE REDIRECTION or USE CAT #
+###############################
 
 # LINE=1
 # cat new-1.txt | while read -r CURRENT_LINE #use cat
@@ -163,7 +212,9 @@
 #         ((LINE++))
 # done < "hello/world.txt" # use file redirection
 
-# READ FILE INSIDE A DIRECTORY
+################################
+# READ FILE INSIDE A DIRECTORY #
+################################
 
 # LINE=1
 # while read -r CURRENT_LINE
